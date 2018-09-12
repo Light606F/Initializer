@@ -6,7 +6,7 @@
 if [[ ! `cat .git/config | grep Light606F@` ]]; then
 	echo "Set name Light606F."
 	mv .git/config .git/configTmp
-	sed -e 's/url = http:\/\//url = http:\/\/Light606F@/g' .git/configTmp > .git/config
+	sed -e 's/url = https:\/\//url = https:\/\/Light606F@/g' .git/configTmp > .git/config
 	rm .git/configTmp
 fi
 
