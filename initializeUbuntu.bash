@@ -13,6 +13,7 @@ LANG=C xdg-user-dirs-gtk-update
 # ---vvv---日本語化してあるなら実行する?とこ
 # mozc の設定画面が開く．
 echo "Set mozc setting."
+echo "一番上の「キーボード-日本語」を「キーボード-英語(US)」にかえて，下の方でレイアウトをUSに変更．"
 read -p "Hit enter: "
 /usr/lib/mozc/mozc_tool -mode=config_dialog
 # ---^^^---日本語化してあるなら実行する?とこ
