@@ -36,9 +36,7 @@ done
 # For add-apt-repository
 # ある場合のほうが多い。つまりこのコマンドいらない場合のほうが多い。
 echo "For add-apt-repository"
-
 # apt show software-properties-common
-
 while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
@@ -58,6 +56,18 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+# terminal setting
+echo "Terminal setting. Force color prompt?"
+while true; do
+    read -p "Do you wish to do this?" yn
+    case $yn in
+        [Yy]* ) bash installAtom.bash; break;;
+        [Nn]* ) break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
 
 # Bashのオートコンプリートがなかったら
 echo "Install bash_completion for auto complete."
