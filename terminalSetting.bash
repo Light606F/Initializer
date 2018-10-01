@@ -26,3 +26,5 @@ if [[ `cat $HOME/.bashrc | grep "$defaultPS1"` ]]; then
   sed -e "s/$defaultPS1/$myPS1/g" $HOME/.bashrcTmp > $HOME/.bashrc
   rm $HOME/.bashrcTmp
 fi
+
+source $HOME/.bashrc
