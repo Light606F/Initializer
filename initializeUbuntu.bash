@@ -62,7 +62,8 @@ echo "Terminal setting. Force color prompt?"
 while true; do
     read -p "Do you wish to do this?" yn
     case $yn in
-        [Yy]* ) bash installAtom.bash; break;;
+        # [Yy]* ) bash installAtom.bash; break;;  # TODO:have to fix it
+        [Yy]* ) echo "have to fix it!"; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
